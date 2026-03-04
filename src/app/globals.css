@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-blue-light: #3FA2F6;
+  --color-blue-darkest: #0F67B1;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sf-pro: var(--font-sf-pro);
+  --font-sf-pro-rounded: var(--font-sf-pro-rounded);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sf-pro), var(--font-sf-pro-rounded), Arial, Helvetica, sans-serif;
+}
+
+.navbar-side {
+  display: flex;
+  width: 10%;
+  height: 100%;
+  align-items: center;
+  padding: 0.5rem /* 8px */;
+  min-height: 4rem /* 64px */;
+}
