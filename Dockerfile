@@ -1,7 +1,7 @@
 # ===============================
 # 1️⃣ Build stage
 # ===============================
-FROM node:18-bullseye AS builder
+FROM node:20-bullseye AS builder
 
 WORKDIR /app
 
@@ -24,7 +24,7 @@ RUN npm run build
 # ===============================
 # 2️⃣ Production stage
 # ===============================
-FROM node:18-bullseye AS runner
+FROM node:20-bullseye AS runner
 
 WORKDIR /app
 
