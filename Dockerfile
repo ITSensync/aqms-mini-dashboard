@@ -12,7 +12,7 @@ ENV NODE_ENV=production
 COPY package.json package-lock.json* ./
 
 # Install clean & deterministic
-RUN npm ci
+RUN npm ci --include=dev
 
 # Copy source
 COPY . .
