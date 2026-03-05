@@ -98,8 +98,8 @@ export default function GaugeFixed({
 
       {/* Name dan Unit tetap di bawah */}
       <div className="font-sf-pro-rounded flex flex-col items-center mt-2">
-        <p className="text-4xl font-semibold">{name}</p>
-        <p className="text-2xl">{unit}</p>
+        <p className="text-3xl font-semibold">{name}</p>
+        <p className="text-xl">{unit}</p>
       </div>
     </div>
   );
