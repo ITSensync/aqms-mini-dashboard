@@ -1,4 +1,5 @@
 import { formatNumber } from "@/app/utils/formatter";
+import { generateWindDirection } from "@/app/utils/windDirection";
 import React from "react";
 
 export default function WeatherTextValue({
@@ -18,13 +19,16 @@ export default function WeatherTextValue({
     >
       <span className="">{icon}</span>
       <p className=" text-lg">{param}</p>
-      <div
-        className={`flex flex-row ${
-          param === "Arah Angin" ? "items-start" : "items-end"
-        }`}
-      >
-        <p className="text-3xl font-bold">{formatNumber(value)}</p>
-        <p className="font-normal text-sm">{unit}</p>
+      <div className={`flex flex-row items-end`}>
+        <p className="text-3xl font-bold">
+          {formatNumber(value)}{" "}
+          {param === "Arah Angin" && (
+            <sup className="font-normal -ml-2">{unit}</sup>
+          )}
+        </p>
+        <p className="font-normal text-sm">
+          {param === "Arah Angin" ? `(${generateWindDirection(value)})` : unit}
+        </p>
       </div>
     </div>
   );
