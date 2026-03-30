@@ -85,7 +85,7 @@ export default function LayoutReport({ param = "all" }: { param?: string }) {
   }, []);
 
   return (
-    <div className={`h-screen  bg-[#E8FFFF]`}>
+    <div className={`bg-[#E8FFFF]`}>
       <Navbar sensorData={sensorData} />
       {param === "gas" ? (
         <ReportRawGas />
