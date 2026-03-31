@@ -10,7 +10,7 @@ export default function TopParameter({
 }) {
   return (
     <div
-      className={`${process.env.AQMS_TYPE === "mini" ? "h-[calc(100vh-330px)]" : "h-full w-1/2"} flex flex-row p-3 gap-4 text-blue-darkest`}
+      className={`${process.env.AQMS_TYPE === "mini" ? "h-[calc(100vh-330px)]" : "h-full w-1/3"} flex flex-row p-3 gap-4 text-blue-darkest`}
     >
       <Pm pm10Value={sensorData.pm10} pm25Value={sensorData.pm25} />
       {process.env.AQMS_TYPE === "mini" && (

@@ -11,7 +11,7 @@ export default function Pm({
 }) {
   return (
     <div
-      className={`${process.env.AQMS_TYPE === "mini" ? "w-1/2" : "w-full"} bg-blue-light/20 border border-blue-darkest shadow-2xl h-full flex flex-row items-center justify-center rounded-xl`}
+      className={`${process.env.AQMS_TYPE === "mini" ? "w-1/2" : "w-full p-5"} bg-blue-light/20 border border-blue-darkest shadow-2xl h-full flex flex-row items-center justify-center rounded-xl`}
     >
       <GaugeFixed name="PM2.5" unit="μg/m3" value={pm25Value} />
       {/* <GaugeMui name="PM10" unit="μg/m3" value={110}/>

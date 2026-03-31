@@ -28,7 +28,7 @@ export default function BottomParameter({
   uv: number;
 }) {
   return (
-    <div className={`${process.env.AQMS_TYPE === 'mini'  ? "grid-cols-8 h-[calc(100vh-520px)]": 'grid-cols-4 w-1/2'} grid p-3 gap-4 text-blue-darkest`}>
+    <div className={`${process.env.AQMS_TYPE === 'mini'  ? "grid-cols-8 h-[calc(100vh-520px)]": 'grid-cols-4 w-2/3'} grid p-3 gap-4 text-blue-darkest`}>
       <WeatherTextValue
         icon={<FaCompass size={50} />}
         param="Arah Angin"
